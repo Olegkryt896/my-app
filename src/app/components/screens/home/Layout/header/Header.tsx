@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 
 const Header: FC = () => {
-  const pathname = useRouter();
+  const { pathname } = useRouter();
   console.log(pathname);
   return (
     <header className={styles.header}>
